@@ -1,0 +1,9 @@
+name: CI
+on:
+  schedule:
+  - cron: '*/5 * * * *'
+jobs:
+  zomaareennaam:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
